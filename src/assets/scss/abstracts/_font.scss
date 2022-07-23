@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'peyda';
+    src: url('~src/assets/fonts/peyda.woff') format('woff');
+}
+
+:root {
+    --bs-body-font-family: 'peyda', sans-serif;
+}

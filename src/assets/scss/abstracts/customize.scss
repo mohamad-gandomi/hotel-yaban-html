@@ -1,0 +1,107 @@
+$primary_color: #0b0951;
+$accent_color: #f4a947;
+$btn-color: white;
+$footer_color: #262335;
+$subfooter_color: #1a172a;
+
+/* Navbar */
+$navbar-brand-margin-end:                   0;
+$nav-link-color:               $primary_color;
+$nav-link-hover-color:          $accent_color;
+
+.text-primary-color {
+ color: $primary_color;
+}
+
+.bg-primary-color {
+  background: $primary_color;
+}
+ 
+.bg-accent-color {
+  background: $accent_color;
+}
+
+.bg-footer-color {
+  background: $footer_color;
+}
+
+.bg-subfooter-color {
+  background: $subfooter_color;
+}
+
+.text-accent-color {
+  color: $accent_color;
+}
+
+.list-inline, .list-unstyled {
+  padding-left: 0;
+  padding-right: 0;
+  list-style: none;
+}
+
+.card {
+
+  &__button {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  &:hover {
+
+    .card__header {
+      background: black;
+    }
+
+    .card__header img  {
+      opacity: 0.5;
+    }
+
+    .card__header span {
+      opacity: 0;
+    }
+
+    .card__button {
+      opacity: 1;
+    }
+  }
+
+
+}
+
+// Create your own map
+$custom-colors: (
+  "primary-color": $primary_color,
+  "accent-color": $accent_color,
+);
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+$utilities: map-merge(
+  $utilities, 
+  (
+    "border": map-merge(
+      map-get($utilities, "border"),
+      ( responsive: true ),
+    ),
+    "border-top": map-merge(
+      map-get($utilities, "border-top"),
+      ( responsive: true ),
+    ),
+    "border-end": map-merge(
+      map-get($utilities, "border-end"),
+      ( responsive: true ),
+    ),
+    "border-bottom": map-merge(
+      map-get($utilities, "border-bottom"),
+      ( responsive: true ),
+    ),
+    "border-start": map-merge(
+      map-get($utilities, "border-start"),
+      ( responsive: true ),
+    ),
+  )
+);
