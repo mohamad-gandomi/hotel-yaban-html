@@ -1,22 +1,20 @@
+
+/* Custom Colors
+========================================================================= */
 $primary_color: #0b0951;
 $accent_color: #f4a947;
 $btn-color: white;
 $footer_color: #262335;
 $subfooter_color: #1a172a;
 
-/* Navbar */
-$navbar-brand-margin-end:                   0;
-$nav-link-color:               $primary_color;
-$nav-link-hover-color:          $accent_color;
-
 .text-primary-color {
- color: $primary_color;
+  color: $primary_color;
 }
 
 .bg-primary-color {
   background: $primary_color;
 }
- 
+
 .bg-accent-color {
   background: $accent_color;
 }
@@ -33,12 +31,23 @@ $nav-link-hover-color:          $accent_color;
   color: $accent_color;
 }
 
-.list-inline, .list-unstyled {
-  padding-left: 0;
-  padding-right: 0;
-  list-style: none;
-}
+$custom-colors: (
+  "primary-color": $primary_color,
+  "accent-color": $accent_color,
+);
 
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+
+/* Navbar
+========================================================================= */
+$navbar-brand-margin-end:                   0;
+$nav-link-color:               $primary_color;
+$nav-link-hover-color:          $accent_color;
+
+
+/* card customization
+========================================================================= */
 .card {
 
   &__button {
@@ -71,15 +80,9 @@ $nav-link-hover-color:          $accent_color;
 
 }
 
-// Create your own map
-$custom-colors: (
-  "primary-color": $primary_color,
-  "accent-color": $accent_color,
-);
 
-// Merge the maps
-$theme-colors: map-merge($theme-colors, $custom-colors);
-
+/* enable responsive borders
+========================================================================= */
 $utilities: map-merge(
   $utilities, 
   (
@@ -105,3 +108,20 @@ $utilities: map-merge(
     ),
   )
 );
+
+
+/* enable responsive borders
+========================================================================= */
+.list-inline, .list-unstyled {
+  padding-left: 0;
+  padding-right: 0;
+  list-style: none;
+}
+
+
+/* customize font-sizes
+========================================================================= */
+// $font-size-base : 15px;
+// $line-height-base: 2;
+// $lead-font-size:              $font-size-base * 1.15;
+
