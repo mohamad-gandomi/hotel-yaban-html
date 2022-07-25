@@ -3,6 +3,7 @@
 ========================================================================= */
 $primary_color: #0b0951;
 $accent_color: #f4a947;
+$second_color: #5191fa;
 $btn-color: white;
 $footer_color: #262335;
 $subfooter_color: #1a172a;
@@ -34,6 +35,7 @@ $subfooter_color: #1a172a;
 $custom-colors: (
   "primary-color": $primary_color,
   "accent-color": $accent_color,
+  "second-color": $second_color,
 );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
@@ -125,3 +127,17 @@ $utilities: map-merge(
 // $line-height-base: 2;
 // $lead-font-size:              $font-size-base * 1.15;
 
+.fs-7 {
+  font-size: .85em !important;
+}
+
+
+/* banner background image 
+========================================================================= */
+.bg-img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}

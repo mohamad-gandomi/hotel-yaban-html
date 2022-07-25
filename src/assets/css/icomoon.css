@@ -62,6 +62,9 @@
 .icon-filter_alt:before {
   content: "\e906";
 }
+.icon-search:before {
+  content: "\e986";
+}
 .icon-whatsapp:before {
   content: "\ea93";
 }
