@@ -65,6 +65,12 @@
 .icon-search:before {
   content: "\e986";
 }
+.icon-equalizer:before {
+  content: "\e992";
+}
+.icon-sort-amount-desc:before {
+  content: "\ea4d";
+}
 .icon-whatsapp:before {
   content: "\ea93";
 }

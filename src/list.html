@@ -6,235 +6,427 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>صفحه اصلی</title>
-    <link rel="stylesheet" href="assets/scss/main.scss">
+    <link rel="stylesheet" href="assets/scss/list.scss">
     <link rel="stylesheet" href="assets/css/icomoon.css">
 </head>
 
 <body>
 
 
-  <!-- NAVBAR
+  <!-- Header
   ================================================== -->
-  <nav class="navbar navbar-expand-lg">
-    <div class="container py-4 py-md-4">
+  <header>
 
-      <!-- Brand -->
-      <a class="navbar-brand ms-3" href="#">
-        <img src="./assets/img/hotel_yaban_logo.svg" alt="" width="50" height="50">
-      </a>
-
-      <!-- Toggler -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon">
-        <img src="./assets/img/menu.svg" alt="" width="30" height="24">
-        </span>
-      </button>
-
-      <!-- Collapse -->
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-
-        <!-- Navigation -->
-        <div class="navbar-nav">
-          <a class="nav-link" href="list.html">رزرو هتل</a>
-          <a class="nav-link" href="#">هتل‌های مشهد</a>
-          <a class="nav-link" href="#">درباره ما</a>
-          <a class="nav-link" href="#">پرسش و پاسخ متداول</a>
-          <a class="nav-link" href="#">تماس با ما</a>
-        </div>
-
-      </div>
-
-      <!-- Button -->
-      <div class="d-none d-md-inline">
-        <a href="#" class="btn btn-accent-color shadow text-light d-flex align-items-center">
-          <span class="mt-1">۰۹۱۵۳۹۶۵۴۶۷</span> 
-          <i class="icon-call me-2"></i>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container py-4 py-md-4">
+  
+        <!-- Brand -->
+        <a class="navbar-brand ms-3" href="#">
+          <img src="./assets/img/hotel_yaban_logo.svg" alt="" width="50" height="50">
         </a>
-      </div>
-    </div>
-  </nav>
-
-
-  <!-- BANNER
-  ================================================== -->
-  <section class="py-5 bg-img" style="background-image: url(assets/img/list_mashhad_banner.jpg);">
-    <div class="container">
-       <div class="row justify-content-center">
-          <div class="col-12 text-center text-light">
-             <!-- Title -->
-             <h1 class="fs-2">
-                هتل های مشهد
-             </h1>
-             <!-- Text -->
-             <p class="mb-6">
-                رزرو هتل مشهد با تخفیف ویژه و بدون جریمه کنسلی در هتل یابان
-             </p>
-             <!-- Search -->
-             <form method="post" action="">
-             <div class="input-group mb-3 flex-row-reverse">
-               <button class="btn btn-second-color text-light d-flex align-items-center" type="button" id="button-addon2"><i class="icon-search"></i></button>
-               <input type="text" class="form-control" placeholder="نام هتل..." aria-label="Recipient's username" aria-describedby="button-addon2">
-              </div>
-            </form>
+  
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon">
+          <img src="./assets/img/menu.svg" alt="" width="30" height="24">
+          </span>
+        </button>
+  
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+  
+          <!-- Navigation -->
+          <div class="navbar-nav">
+            <a class="nav-link" href="list.html">رزرو هتل</a>
+            <a class="nav-link" href="#">هتل‌های مشهد</a>
+            <a class="nav-link" href="#">درباره ما</a>
+            <a class="nav-link" href="#">پرسش و پاسخ متداول</a>
+            <a class="nav-link" href="#">تماس با ما</a>
           </div>
-       </div>
-    </div>
- </section>
+  
+        </div>
+  
+        <!-- Button -->
+        <div class="d-none d-lg-inline">
+          <a href="#" class="btn btn-accent-color shadow-sm text-light d-flex align-items-center">
+            <span class="mt-1">۰۹۱۵۳۹۶۵۴۶۷</span> 
+            <i class="icon-call me-2"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
+  
+    <!-- Banner -->
+    <section class="py-5 bg-img" style="background-image: url(assets/img/list_mashhad_banner.jpg);">
+      <div class="container">
+         <div class="row justify-content-center">
+            <div class="col-12 text-center text-light">
+
+               <!-- Title -->
+               <h1 class="fs-2">
+                  هتل های مشهد
+               </h1>
+
+               <!-- Text -->
+               <p class="mb-6">
+                  رزرو هتل مشهد با تخفیف ویژه و بدون جریمه کنسلی در هتل یابان
+               </p>
+
+               <!-- Search -->
+               <form method="post" action="">
+               <div class="input-group mb-3 flex-row-reverse">
+                 <button class="btn btn-second-color text-light d-flex align-items-center" type="button" id="button-addon2"><i class="icon-search"></i></button>
+                 <input type="text" class="form-control" placeholder="نام هتل..." aria-label="Recipient's username" aria-describedby="button-addon2">
+                </div>
+              </form>
+
+            </div>
+         </div>
+      </div>
+   </section>
+
+  </header>
 
 
   <!-- MAIN
   ================================================== -->
-  <main class="py-5">
+  <section class="py-5">
     <div class="container">
+
+      <!--Filter & Sort Togglers-->
+      <section class="row d-xl-none mb-4">
+
+        <!-- Filter Toggler -->
+        <div class="col-6">
+          <button class="btn d-flex align-items-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#filterCollapse" aria-expanded="false" aria-controls="filterCollapse">
+            <i class="icon-equalizer ps-2 fs-5"></i>
+            فیلتر
+          </button>
+        </div>
+
+        <!-- Sort Toggler -->
+        <div class="col-6">
+          <button class="btn d-flex align-items-center collapsed me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#sortingCollapse" aria-expanded="false" aria-controls="sortingCollapse">
+            مرتب سازی
+            <i class="icon-sort-amount-desc pe-2 fs-5"></i>
+          </button>
+        </div>
+
+      </section>
+
       <div class="row">
 
         <!--Filters-->
-        <div class="col-12 col-xl-3 ps-4">
+        <aside class="col-12 col-xl-3 ps-4 collapse d-xl-block" id="filterCollapse" >
 
-          <div class="card mb-4 border-0">
-            <div class="card-body shadow p-4">
+          <!--Price Filter-->
+          <section class="card mb-4 border-0">
+            <div class="card-body shadow-sm p-4">
 
-              <p class="border-bottom pb-3 mb-4">تعداد تخت</p>
+              <p class="border-bottom pb-3 mb-4">فیلتر قیمت</p>
+              <div class="range-slider" data-min="200000" data-max="5000000"></div>
+              
+              <div class="row text-center pt-4">
 
-              <div class="text-muted d-flex align-items-center mb-2 fs-7">
-                <input class="form-check-input mt-0 ms-3" type="checkbox" value="" id="defaultCheck1">
-                <label class="form-check-label" for="defaultCheck1">
-                  ۱ تخته
-                </label>
-              </div>
+                <div class="col-6">
+                  <div class="mb-2" >تا شبی</div>
+                  <input type="text" readonly class="mb-2 w-100 border-0 text-center range-to" name="price-range-to">
+                  <div class="mb-2" >تومان</div>
+                </div>
 
-              <div class="text-muted d-flex align-items-center mb-2 fs-7">
-                <input class="form-check-input mt-0 ms-3" type="checkbox" value="" id="defaultCheck2">
-                <label class="form-check-label" for="defaultCheck2">
-                  ۲ تخته
-                </label>
-              </div>
+                <div class="col-6 border-end">
+                  <div class="mb-2" >از شبی</div>
+                  <input type="text" readonly class="mb-2 w-100 border-0 text-center range-from" name="price-range-from">
+                  <div class="mb-2" >تومان</div>
+                </div>
 
-              <div class="text-muted d-flex align-items-center mb-2 fs-7">
-                <input class="form-check-input mt-0 ms-3" type="checkbox" value="" id="defaultCheck3">
-                <label class="form-check-label" for="defaultCheck3">
-                  ۳ تخته
-                </label>
-              </div>
-
-              <div class="text-muted d-flex align-items-center mb-2 fs-7">
-                <input class="form-check-input mt-0 ms-3" type="checkbox" value="" id="defaultCheck4">
-                <label class="form-check-label" for="defaultCheck4">
-                  ۴ تخته
-                </label>
-              </div>
-
-              <div class="text-muted d-flex align-items-center mb-2 fs-7">
-                <input class="form-check-input mt-0 ms-3" type="checkbox" value="" id="defaultCheck5">
-                <label class="form-check-label" for="defaultCheck5">
-                  ۵ تخته
-                </label>
-              </div>
-
-              <div class="text-muted d-flex align-items-center fs-7">
-                <input class="form-check-input mt-0 ms-3" type="checkbox" value="" id="defaultCheck6">
-                <label class="form-check-label" for="defaultCheck6">
-                  ۶ تخته و بیشتر
-                </label>
               </div>
 
             </div>
 
-          </div>
+          </section>
 
-          <div class="card mb-4 border-0">
-            <div class="card-body shadow p-4">
+          <!--Distance Filter-->
+          <section class="card mb-4 border-0">
+            <div class="card-body shadow-sm p-4">
+
+              <p class="border-bottom pb-3 mb-4">فاصله تا <span>حرم مطهر</span></p>
+              <div class="range-slider" data-min="5" data-max="20"></div>
+              
+              <div class="row text-center pt-4">
+
+                <div class="col-6">
+                  <div class="mb-2" >تا</div>
+                  <input type="text" readonly class="mb-2 w-100 border-0 text-center range-to">
+                  <div class="mb-2" >دقیقه</div>
+                </div>
+
+                <div class="col-6 border-end">
+                  <div class="mb-2" >از</div>
+                  <input type="text" readonly class="mb-2 w-100 border-0 text-center range-from">
+                  <div class="mb-2" >دقیقه</div>
+                </div>
+                
+              </div>
+
+            </div>
+
+          </section>
+
+          <!--Star Filter-->
+          <section class="card mb-4 border-0">
+            <div class="card-body shadow-sm p-4">
 
               <p class="border-bottom pb-3 mb-4">درجه هتل</p>
 
-              <div class="text-muted d-flex align-items-center mb-2 fs-7">
-                <input class="form-check-input mt-0 ms-3" type="checkbox" value="" id="defaultCheck7">
-                <label class="form-check-label" for="defaultCheck7">
-                  هتل‌های پنج ستاره
-                </label>
-              </div>
+              <ul class="list-unstyled">
+                <li class="text-muted d-flex align-items-center mb-2 fs-7">
+                  <input class="form-check-input mt-0 ms-3" type="checkbox" value="" id="defaultCheck7">
+                  <label class="form-check-label" for="defaultCheck7">
+                    هتل‌های پنج ستاره
+                  </label>
+                </li>
+                <li class="text-muted d-flex align-items-center mb-2 fs-7">
+                  <input class="form-check-input mt-0 ms-3" type="checkbox" value="" id="defaultCheck8">
+                  <label class="form-check-label" for="defaultCheck8">
+                    هتل‌های چهار ستاره
+                  </label>
+                </li>
+                <li class="text-muted d-flex align-items-center mb-2 fs-7">
+                  <input class="form-check-input mt-0 ms-3" type="checkbox" value="" id="defaultCheck9">
+                  <label class="form-check-label" for="defaultCheck9">
+                    هتل‌های سه ستاره
+                  </label>
+                </li>
+                <li class="text-muted d-flex align-items-center mb-2 fs-7">
+                  <input class="form-check-input mt-0 ms-3" type="checkbox" value="" id="defaultCheck10">
+                  <label class="form-check-label" for="defaultCheck10">
+                    هتل‌های دو ستاره
+                  </label>
+                </li>
+                <li class="text-muted d-flex align-items-center mb-2 fs-7">
+                  <input class="form-check-input mt-0 ms-3" type="checkbox" value="" id="defaultCheck11">
+                  <label class="form-check-label" for="defaultCheck11">
+                    هتل‌های یک ستاره
+                  </label>
+                </li>
+                <li class="text-muted d-flex align-items-center fs-7">
+                  <input class="form-check-input mt-0 ms-3" type="checkbox" value="" id="defaultCheck12">
+                  <label class="form-check-label" for="defaultCheck12">
+                    هتل آپارتمان
+                  </label>
+                </li>
+              </ul>
 
-              <div class="text-muted d-flex align-items-center mb-2 fs-7">
-                <input class="form-check-input mt-0 ms-3" type="checkbox" value="" id="defaultCheck8">
-                <label class="form-check-label" for="defaultCheck8">
-                  هتل‌های چهار ستاره
-                </label>
-              </div>
+            </div>
+          </section>
 
-              <div class="text-muted d-flex align-items-center mb-2 fs-7">
-                <input class="form-check-input mt-0 ms-3" type="checkbox" value="" id="defaultCheck9">
-                <label class="form-check-label" for="defaultCheck9">
-                  هتل‌های سه ستاره
-                </label>
-              </div>
+          <!--Facility Filter-->
+          <section class="card mb-4 border-0">
+            <div class="card-body shadow-sm p-4">
 
-              <div class="text-muted d-flex align-items-center mb-2 fs-7">
-                <input class="form-check-input mt-0 ms-3" type="checkbox" value="" id="defaultCheck10">
-                <label class="form-check-label" for="defaultCheck10">
-                  هتل‌های دو ستاره
-                </label>
-              </div>
+              <p class="border-bottom pb-3 mb-4">امکانات</p>
 
-              <div class="text-muted d-flex align-items-center mb-2 fs-7">
-                <input class="form-check-input mt-0 ms-3" type="checkbox" value="" id="defaultCheck11">
-                <label class="form-check-label" for="defaultCheck11">
-                  هتل‌های یک ستاره
-                </label>
-              </div>
+              <div class="input-group mb-3 flex-row-reverse">
+                <button class="btn btn-second-color text-light d-flex align-items-center" type="button" id="button-addon2"><i class="icon-search"></i></button>
+                <input type="text" class="form-control filter" placeholder="جستجو کنید" aria-label="Recipient's username" aria-describedby="button-addon2">
+               </div>
 
-              <div class="text-muted d-flex align-items-center fs-7">
-                <input class="form-check-input mt-0 ms-3" type="checkbox" value="" id="defaultCheck12">
-                <label class="form-check-label" for="defaultCheck12">
-                  هتل آپارتمان
-                </label>
+              <div class="row ms-1">
+                <div class="col-12 facilities-list" style="height: 200px; overflow-y: scroll;" >
+
+                  <ul class="list-unstyled">
+
+                    <li class="text-muted d-flex align-items-center mb-2 fs-7">
+                      <input class="form-check-input mt-0 ms-3" type="checkbox" value="" id="defaultCheck15">
+                      <label class="form-check-label" for="defaultCheck15">
+                        آسانسور
+                      </label>
+                    </li>
+
+                    <li class="text-muted d-flex align-items-center mb-2 fs-7">
+                      <input class="form-check-input mt-0 ms-3" type="checkbox" value="" id="defaultCheck16">
+                      <label class="form-check-label" for="defaultCheck16">
+                        اتاق بازی
+                      </label>
+                    </li>
+
+                    <li class="text-muted d-flex align-items-center mb-2 fs-7">
+                      <input class="form-check-input mt-0 ms-3" type="checkbox" value="" id="defaultCheck17">
+                      <label class="form-check-label" for="defaultCheck17">
+                        آبگرم و سنا
+                      </label>
+                    </li>
+
+                    <li class="text-muted d-flex align-items-center mb-2 fs-7">
+                      <input class="form-check-input mt-0 ms-3" type="checkbox" value="" id="defaultCheck18">
+                      <label class="form-check-label" for="defaultCheck18">
+                        استخر
+                      </label>
+                    </li>
+
+                    <li class="text-muted d-flex align-items-center mb-2 fs-7">
+                      <input class="form-check-input mt-0 ms-3" type="checkbox" value="" id="defaultCheck19">
+                      <label class="form-check-label" for="defaultCheck19">
+                        خدمات باربری
+                      </label>
+                    </li>
+
+                    <li class="text-muted d-flex align-items-center mb-2 fs-7">
+                      <input class="form-check-input mt-0 ms-3" type="checkbox" value="" id="defaultCheck20">
+                      <label class="form-check-label" for="defaultCheck20">
+                        آسانسور
+                      </label>
+                    </li>
+
+                    <li class="text-muted d-flex align-items-center mb-2 fs-7">
+                      <input class="form-check-input mt-0 ms-3" type="checkbox" value="" id="defaultCheck21">
+                      <label class="form-check-label" for="defaultCheck21">
+                        اتاق بازی
+                      </label>
+                    </li>
+
+                    <li class="text-muted d-flex align-items-center mb-2 fs-7">
+                      <input class="form-check-input mt-0 ms-3" type="checkbox" value="" id="defaultCheck22">
+                      <label class="form-check-label" for="defaultCheck22">
+                        آبگرم و سنا
+                      </label>
+                    </li>
+
+                    <li class="text-muted d-flex align-items-center mb-2 fs-7">
+                      <input class="form-check-input mt-0 ms-3" type="checkbox" value="" id="defaultCheck23">
+                      <label class="form-check-label" for="defaultCheck23">
+                        استخر
+                      </label>
+                    </li>
+
+                    <li class="text-muted d-flex align-items-center mb-2 fs-7">
+                      <input class="form-check-input mt-0 ms-3" type="checkbox" value="" id="defaultCheck24">
+                      <label class="form-check-label" for="defaultCheck24">
+                        خدمات باربری
+                      </label>
+                    </li>
+
+                  </ul>
+
+                </div>
               </div>
 
             </div>
 
-          </div>
+          </section>
 
-          <div class="card mb-4 border-0">
-            <div class="card-body shadow p-4">
+          <!--Bed Filter-->
+          <section class="card mb-4 border-0">
+            <div class="card-body shadow-sm p-4">
+
+              <p class="border-bottom pb-3 mb-4">تعداد تخت</p>
+
+              <ul class="list-unstyled">
+
+                <li class="text-muted d-flex align-items-center mb-2 fs-7">
+                  <input class="form-check-input mt-0 ms-3" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">
+                    ۱ تخته
+                  </label>
+                </li>
+
+                <li class="text-muted d-flex align-items-center mb-2 fs-7">
+                  <input class="form-check-input mt-0 ms-3" type="checkbox" value="" id="defaultCheck2">
+                  <label class="form-check-label" for="defaultCheck2">
+                    ۲ تخته
+                  </label>
+                </li>
+
+                <li class="text-muted d-flex align-items-center mb-2 fs-7">
+                  <input class="form-check-input mt-0 ms-3" type="checkbox" value="" id="defaultCheck3">
+                  <label class="form-check-label" for="defaultCheck3">
+                    ۳ تخته
+                  </label>
+                </li>
+
+                <li class="text-muted d-flex align-items-center mb-2 fs-7">
+                  <input class="form-check-input mt-0 ms-3" type="checkbox" value="" id="defaultCheck4">
+                  <label class="form-check-label" for="defaultCheck4">
+                    ۴ تخته
+                  </label>
+                </li>
+
+                <li class="text-muted d-flex align-items-center mb-2 fs-7">
+                  <input class="form-check-input mt-0 ms-3" type="checkbox" value="" id="defaultCheck5">
+                  <label class="form-check-label" for="defaultCheck5">
+                    ۵ تخته
+                  </label>
+                </li>
+
+                <li class="text-muted d-flex align-items-center fs-7">
+                  <input class="form-check-input mt-0 ms-3" type="checkbox" value="" id="defaultCheck6">
+                  <label class="form-check-label" for="defaultCheck6">
+                    ۶ تخته و بیشتر
+                  </label>
+                </li>
+
+              </ul>
+
+            </div>
+
+          </section>
+
+          <!--Hotel Type Filter-->
+          <section class="card mb-4 border-0">
+            <div class="card-body shadow-sm p-4">
 
               <p class="border-bottom pb-3 mb-4">نوع اتاق</p>
 
-              <div class="text-muted d-flex align-items-center mb-2 fs-7">
-                <input class="form-check-input mt-0 ms-3" type="checkbox" value="" id="defaultCheck13">
-                <label class="form-check-label" for="defaultCheck13">
-                  اتاق خواب
-                </label>
-              </div>
+              <ul class="list-unstyled">
 
-              <div class="text-muted d-flex align-items-center mb-2 fs-7">
-                <input class="form-check-input mt-0 ms-3" type="checkbox" value="" id="defaultCheck14">
-                <label class="form-check-label" for="defaultCheck14">
-                  سوئیت
-                </label>
-              </div>
+                <li class="text-muted d-flex align-items-center mb-2 fs-7">
+                  <input class="form-check-input mt-0 ms-3" type="checkbox" value="" id="defaultCheck13">
+                  <label class="form-check-label" for="defaultCheck13">
+                    اتاق خواب
+                  </label>
+                </li>
+
+                <li class="text-muted d-flex align-items-center mb-2 fs-7">
+                  <input class="form-check-input mt-0 ms-3" type="checkbox" value="" id="defaultCheck14">
+                  <label class="form-check-label" for="defaultCheck14">
+                    سوئیت
+                  </label>
+                </li>
+
+              </ul>
 
             </div>
 
-          </div>
+          </section>
 
-        </div>
+        </aside>
 
-        <!--List-->
-        <div class="col-12 col-xl-9 shadow">
+        <!--main-->
+        <main class="col-12 col-xl-9 shadow-sm">
 
-          <div class="row border-bottom m-4">
-            <div class="col-6">
+          <!--Sort-->
+          <section class="row border-bottom m-4 collapse d-xl-flex" id="sortingCollapse" >
+
+            <div class="col-12 col-xl-6">
               <p>مرتب سازی براساس: </p>
             </div>
-            <div class="col-6 text-start">
-              <a href="#" class="text-reset text-decoration-none">جدیدترین</a>
-              <a href="#" class="text-reset text-decoration-none me-4">کم به زیاد</a>
-              <a href="#" class="text-reset text-decoration-none me-4">زیاد به کم</a>
-              <a href="#" class="text-reset text-decoration-none me-4">پربازدید ترین</a>
+
+            <div class="col-12 col-xl-6 text-xl-start">
+              <ul class="list-unstyled">
+                <li class="mb-2 d-xl-inline me-2"><a href="#" class="text-reset text-decoration-none">جدیدترین</a></li>
+                <li class="mb-2 d-xl-inline me-2"><a href="#" class="text-reset text-decoration-none">کم به زیاد</a></li>
+                <li class="mb-2 d-xl-inline me-2"><a href="#" class="text-reset text-decoration-none">زیاد به کم</a></li>
+                <li class="mb-2 d-xl-inline me-2"><a href="#" class="text-reset text-decoration-none">پربازدید ترین</a></li>
+              </ul>             
             </div>
-          </div>
+
+          </section>
 
           <!--List-->
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 justify-content-center p-4 p-xxl-5">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 justify-content-center p-4">
+            
             <!-- Card -->
             <div class="col mb-4">
               <div class="card">
@@ -273,7 +465,7 @@
                   <h5 class="card-title">هتل دایان مشهد</h5>
   
                   <!-- Hotel Address -->
-                  <p class="card-text mb-0  text-truncate"><i class="icon-location_on ms-1"></i><small> مشهد، آخوند خراسانی ۸</small></p>
+                  <address class="card-text mb-0  text-truncate"><i class="icon-location_on ms-1"></i><small> مشهد، آخوند خراسانی ۸</small></address>
   
                   <!-- Hotel Price -->
                   <p class="card-text text-accent-color"><i class="icon-bolt ms-1"></i><small> شروع قیمت از ۱۵۶٫۰۰۰ تومان / شب</small></p>
@@ -321,7 +513,7 @@
                   <h5 class="card-title">هتل دایان مشهد</h5>
   
                   <!-- Hotel Address -->
-                  <p class="card-text mb-0  text-truncate"><i class="icon-location_on ms-1"></i><small> مشهد، آخوند خراسانی ۸</small></p>
+                  <address class="card-text mb-0  text-truncate"><i class="icon-location_on ms-1"></i><small> مشهد، آخوند خراسانی ۸</small></address>
   
                   <!-- Hotel Price -->
                   <p class="card-text text-accent-color"><i class="icon-bolt ms-1"></i><small> شروع قیمت از ۱۵۶٫۰۰۰ تومان / شب</small></p>
@@ -369,7 +561,7 @@
                   <h5 class="card-title">هتل دایان مشهد</h5>
   
                   <!-- Hotel Address -->
-                  <p class="card-text mb-0  text-truncate"><i class="icon-location_on ms-1"></i><small> مشهد، آخوند خراسانی ۸</small></p>
+                  <address class="card-text mb-0  text-truncate"><i class="icon-location_on ms-1"></i><small> مشهد، آخوند خراسانی ۸</small></address>
   
                   <!-- Hotel Price -->
                   <p class="card-text text-accent-color"><i class="icon-bolt ms-1"></i><small> شروع قیمت از ۱۵۶٫۰۰۰ تومان / شب</small></p>
@@ -417,7 +609,7 @@
                   <h5 class="card-title">هتل دایان مشهد</h5>
   
                   <!-- Hotel Address -->
-                  <p class="card-text mb-0  text-truncate"><i class="icon-location_on ms-1"></i><small> مشهد، آخوند خراسانی ۸</small></p>
+                  <address class="card-text mb-0  text-truncate"><i class="icon-location_on ms-1"></i><small> مشهد، آخوند خراسانی ۸</small></address>
   
                   <!-- Hotel Price -->
                   <p class="card-text text-accent-color"><i class="icon-bolt ms-1"></i><small> شروع قیمت از ۱۵۶٫۰۰۰ تومان / شب</small></p>
@@ -465,7 +657,7 @@
                   <h5 class="card-title">هتل دایان مشهد</h5>
   
                   <!-- Hotel Address -->
-                  <p class="card-text mb-0  text-truncate"><i class="icon-location_on ms-1"></i><small> مشهد، آخوند خراسانی ۸</small></p>
+                  <address class="card-text mb-0  text-truncate"><i class="icon-location_on ms-1"></i><small> مشهد، آخوند خراسانی ۸</small></address>
   
                   <!-- Hotel Price -->
                   <p class="card-text text-accent-color"><i class="icon-bolt ms-1"></i><small> شروع قیمت از ۱۵۶٫۰۰۰ تومان / شب</small></p>
@@ -513,7 +705,295 @@
                   <h5 class="card-title">هتل دایان مشهد</h5>
   
                   <!-- Hotel Address -->
-                  <p class="card-text mb-0  text-truncate"><i class="icon-location_on ms-1"></i><small> مشهد، آخوند خراسانی ۸</small></p>
+                  <address class="card-text mb-0  text-truncate"><i class="icon-location_on ms-1"></i><small> مشهد، آخوند خراسانی ۸</small></address>
+  
+                  <!-- Hotel Price -->
+                  <p class="card-text text-accent-color"><i class="icon-bolt ms-1"></i><small> شروع قیمت از ۱۵۶٫۰۰۰ تومان / شب</small></p>
+  
+                </div>
+  
+              </div>
+            </div>
+
+            <!-- Card -->
+            <div class="col mb-4">
+              <div class="card">
+  
+                <!-- Card Header -->
+                <div class="position-relative card__header">
+  
+                  <!-- Discount Badge -->
+                  <span class="position-absolute bg-danger text-light py-1 px-2 mt-2 me-2 rounded">
+                    <small>۲۸٪ تخفیف</small>
+                  </span>
+  
+                  <!-- Hotel Picture -->
+                  <img src="/src/assets/img/hotel_picture.jpg" class="card-img-top" alt="">
+  
+                  <!-- Hotel Star Classification -->
+                  <span class="position-absolute bottom-0 me-2 end-0 lead">
+                    <i class="icon-star text-accent-color"></i>
+                    <i class="icon-star text-accent-color"></i>
+                    <i class="icon-star text-accent-color"></i>
+                    <i class="icon-star text-accent-color"></i>
+                    <i class="icon-star text-accent-color"></i>
+                  </span>
+  
+                </div>
+  
+                <!-- Button -->
+                <div class="d-flex justify-content-center card__button">
+                  <a href="#" class="btn btn-primary btn-accent-color text-light">مشاهده</a>
+                </div>
+                
+                <!-- Card Body -->
+                <div class="card-body">
+  
+                  <!-- Hotel Title -->
+                  <h5 class="card-title">هتل دایان مشهد</h5>
+  
+                  <!-- Hotel Address -->
+                  <address class="card-text mb-0  text-truncate"><i class="icon-location_on ms-1"></i><small> مشهد، آخوند خراسانی ۸</small></address>
+  
+                  <!-- Hotel Price -->
+                  <p class="card-text text-accent-color"><i class="icon-bolt ms-1"></i><small> شروع قیمت از ۱۵۶٫۰۰۰ تومان / شب</small></p>
+  
+                </div>
+  
+              </div>
+            </div>
+
+            <!-- Card -->
+            <div class="col mb-4">
+              <div class="card">
+  
+                <!-- Card Header -->
+                <div class="position-relative card__header">
+  
+                  <!-- Discount Badge -->
+                  <span class="position-absolute bg-danger text-light py-1 px-2 mt-2 me-2 rounded">
+                    <small>۲۸٪ تخفیف</small>
+                  </span>
+  
+                  <!-- Hotel Picture -->
+                  <img src="/src/assets/img/hotel_picture.jpg" class="card-img-top" alt="">
+  
+                  <!-- Hotel Star Classification -->
+                  <span class="position-absolute bottom-0 me-2 end-0 lead">
+                    <i class="icon-star text-accent-color"></i>
+                    <i class="icon-star text-accent-color"></i>
+                    <i class="icon-star text-accent-color"></i>
+                    <i class="icon-star text-accent-color"></i>
+                    <i class="icon-star text-accent-color"></i>
+                  </span>
+  
+                </div>
+  
+                <!-- Button -->
+                <div class="d-flex justify-content-center card__button">
+                  <a href="#" class="btn btn-primary btn-accent-color text-light">مشاهده</a>
+                </div>
+                
+                <!-- Card Body -->
+                <div class="card-body">
+  
+                  <!-- Hotel Title -->
+                  <h5 class="card-title">هتل دایان مشهد</h5>
+  
+                  <!-- Hotel Address -->
+                  <address class="card-text mb-0  text-truncate"><i class="icon-location_on ms-1"></i><small> مشهد، آخوند خراسانی ۸</small></address>
+  
+                  <!-- Hotel Price -->
+                  <p class="card-text text-accent-color"><i class="icon-bolt ms-1"></i><small> شروع قیمت از ۱۵۶٫۰۰۰ تومان / شب</small></p>
+  
+                </div>
+  
+              </div>
+            </div>
+
+            <!-- Card -->
+            <div class="col mb-4">
+              <div class="card">
+  
+                <!-- Card Header -->
+                <div class="position-relative card__header">
+  
+                  <!-- Discount Badge -->
+                  <span class="position-absolute bg-danger text-light py-1 px-2 mt-2 me-2 rounded">
+                    <small>۲۸٪ تخفیف</small>
+                  </span>
+  
+                  <!-- Hotel Picture -->
+                  <img src="/src/assets/img/hotel_picture.jpg" class="card-img-top" alt="">
+  
+                  <!-- Hotel Star Classification -->
+                  <span class="position-absolute bottom-0 me-2 end-0 lead">
+                    <i class="icon-star text-accent-color"></i>
+                    <i class="icon-star text-accent-color"></i>
+                    <i class="icon-star text-accent-color"></i>
+                    <i class="icon-star text-accent-color"></i>
+                    <i class="icon-star text-accent-color"></i>
+                  </span>
+  
+                </div>
+  
+                <!-- Button -->
+                <div class="d-flex justify-content-center card__button">
+                  <a href="#" class="btn btn-primary btn-accent-color text-light">مشاهده</a>
+                </div>
+                
+                <!-- Card Body -->
+                <div class="card-body">
+  
+                  <!-- Hotel Title -->
+                  <h5 class="card-title">هتل دایان مشهد</h5>
+  
+                  <!-- Hotel Address -->
+                  <address class="card-text mb-0  text-truncate"><i class="icon-location_on ms-1"></i><small> مشهد، آخوند خراسانی ۸</small></address>
+  
+                  <!-- Hotel Price -->
+                  <p class="card-text text-accent-color"><i class="icon-bolt ms-1"></i><small> شروع قیمت از ۱۵۶٫۰۰۰ تومان / شب</small></p>
+  
+                </div>
+  
+              </div>
+            </div>
+
+            <!-- Card -->
+            <div class="col mb-4">
+              <div class="card">
+  
+                <!-- Card Header -->
+                <div class="position-relative card__header">
+  
+                  <!-- Discount Badge -->
+                  <span class="position-absolute bg-danger text-light py-1 px-2 mt-2 me-2 rounded">
+                    <small>۲۸٪ تخفیف</small>
+                  </span>
+  
+                  <!-- Hotel Picture -->
+                  <img src="/src/assets/img/hotel_picture.jpg" class="card-img-top" alt="">
+  
+                  <!-- Hotel Star Classification -->
+                  <span class="position-absolute bottom-0 me-2 end-0 lead">
+                    <i class="icon-star text-accent-color"></i>
+                    <i class="icon-star text-accent-color"></i>
+                    <i class="icon-star text-accent-color"></i>
+                    <i class="icon-star text-accent-color"></i>
+                    <i class="icon-star text-accent-color"></i>
+                  </span>
+  
+                </div>
+  
+                <!-- Button -->
+                <div class="d-flex justify-content-center card__button">
+                  <a href="#" class="btn btn-primary btn-accent-color text-light">مشاهده</a>
+                </div>
+                
+                <!-- Card Body -->
+                <div class="card-body">
+  
+                  <!-- Hotel Title -->
+                  <h5 class="card-title">هتل دایان مشهد</h5>
+  
+                  <!-- Hotel Address -->
+                  <address class="card-text mb-0  text-truncate"><i class="icon-location_on ms-1"></i><small> مشهد، آخوند خراسانی ۸</small></address>
+  
+                  <!-- Hotel Price -->
+                  <p class="card-text text-accent-color"><i class="icon-bolt ms-1"></i><small> شروع قیمت از ۱۵۶٫۰۰۰ تومان / شب</small></p>
+  
+                </div>
+  
+              </div>
+            </div>
+
+            <!-- Card -->
+            <div class="col mb-4">
+              <div class="card">
+  
+                <!-- Card Header -->
+                <div class="position-relative card__header">
+  
+                  <!-- Discount Badge -->
+                  <span class="position-absolute bg-danger text-light py-1 px-2 mt-2 me-2 rounded">
+                    <small>۲۸٪ تخفیف</small>
+                  </span>
+  
+                  <!-- Hotel Picture -->
+                  <img src="/src/assets/img/hotel_picture.jpg" class="card-img-top" alt="">
+  
+                  <!-- Hotel Star Classification -->
+                  <span class="position-absolute bottom-0 me-2 end-0 lead">
+                    <i class="icon-star text-accent-color"></i>
+                    <i class="icon-star text-accent-color"></i>
+                    <i class="icon-star text-accent-color"></i>
+                    <i class="icon-star text-accent-color"></i>
+                    <i class="icon-star text-accent-color"></i>
+                  </span>
+  
+                </div>
+  
+                <!-- Button -->
+                <div class="d-flex justify-content-center card__button">
+                  <a href="#" class="btn btn-primary btn-accent-color text-light">مشاهده</a>
+                </div>
+                
+                <!-- Card Body -->
+                <div class="card-body">
+  
+                  <!-- Hotel Title -->
+                  <h5 class="card-title">هتل دایان مشهد</h5>
+  
+                  <!-- Hotel Address -->
+                  <address class="card-text mb-0  text-truncate"><i class="icon-location_on ms-1"></i><small> مشهد، آخوند خراسانی ۸</small></address>
+  
+                  <!-- Hotel Price -->
+                  <p class="card-text text-accent-color"><i class="icon-bolt ms-1"></i><small> شروع قیمت از ۱۵۶٫۰۰۰ تومان / شب</small></p>
+  
+                </div>
+  
+              </div>
+            </div>
+
+            <!-- Card -->
+            <div class="col mb-4">
+              <div class="card">
+  
+                <!-- Card Header -->
+                <div class="position-relative card__header">
+  
+                  <!-- Discount Badge -->
+                  <span class="position-absolute bg-danger text-light py-1 px-2 mt-2 me-2 rounded">
+                    <small>۲۸٪ تخفیف</small>
+                  </span>
+  
+                  <!-- Hotel Picture -->
+                  <img src="/src/assets/img/hotel_picture.jpg" class="card-img-top" alt="">
+  
+                  <!-- Hotel Star Classification -->
+                  <span class="position-absolute bottom-0 me-2 end-0 lead">
+                    <i class="icon-star text-accent-color"></i>
+                    <i class="icon-star text-accent-color"></i>
+                    <i class="icon-star text-accent-color"></i>
+                    <i class="icon-star text-accent-color"></i>
+                    <i class="icon-star text-accent-color"></i>
+                  </span>
+  
+                </div>
+  
+                <!-- Button -->
+                <div class="d-flex justify-content-center card__button">
+                  <a href="#" class="btn btn-primary btn-accent-color text-light">مشاهده</a>
+                </div>
+                
+                <!-- Card Body -->
+                <div class="card-body">
+  
+                  <!-- Hotel Title -->
+                  <h5 class="card-title">هتل دایان مشهد</h5>
+  
+                  <!-- Hotel Address -->
+                  <address class="card-text mb-0  text-truncate"><i class="icon-location_on ms-1"></i><small> مشهد، آخوند خراسانی ۸</small></address>
   
                   <!-- Hotel Price -->
                   <p class="card-text text-accent-color"><i class="icon-bolt ms-1"></i><small> شروع قیمت از ۱۵۶٫۰۰۰ تومان / شب</small></p>
@@ -524,11 +1004,12 @@
             </div>
 
           </div>
-        </div>
+        </main>
 
       </div>
+      
     </div>
-  </main>
+  </section>
 
 
   <!-- FOOTER

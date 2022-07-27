@@ -1,0 +1,40 @@
+.ui-state-default, 
+.ui-widget-content 
+.ui-state-default, 
+.ui-widget-header .ui-state-default, 
+.ui-button, 
+html .ui-button.ui-state-disabled:hover, 
+html .ui-button.ui-state-disabled:active {
+    color: #454545;
+    background: #5191f9;
+    border: 1px solid white;
+    font-weight: normal;
+    border-radius: 50%;
+}
+
+span.ui-slider-handle.ui-corner-all.ui-state-default:focus-visible,
+span.ui-slider-handle.ui-corner-all.ui-state-default:focus {
+    outline: none;
+}
+
+span.ui-slider-handle.ui-corner-all.ui-state-default:hover {
+    transform: scale(1.2);
+}
+
+.ui-widget {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+.ui-slider-horizontal {
+    height: 0.7em;
+}
+
+.ui-widget.ui-widget-content {
+    border: 1px solid #fff;
+    background: #c5c5c540;
+    border-radius: 10px
+}
+
+.ui-widget-header {
+    background: #5191f9;
+}
