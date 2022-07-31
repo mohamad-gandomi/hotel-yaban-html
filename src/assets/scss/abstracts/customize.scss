@@ -1,7 +1,7 @@
 
 /* Custom Colors
 ========================================================================= */
-$primary_color: #0b0951;
+$primary_color: #55aad4;
 $accent_color: #f4a947;
 $second_color: #5191fa;
 $btn-color: white;
@@ -44,7 +44,7 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 /* Navbar
 ========================================================================= */
 $navbar-brand-margin-end:                   0;
-$nav-link-color:               $primary_color;
+$nav-link-color:               #0b0951;
 $nav-link-hover-color:          $accent_color;
 
 
@@ -123,13 +123,18 @@ $utilities: map-merge(
 
 /* customize font-sizes
 ========================================================================= */
-// $font-size-base : 15px;
-// $line-height-base: 2;
-// $lead-font-size:              $font-size-base * 1.15;
+$font-size-base : 15px;
+$line-height-base: 2;
+$lead-font-size:              $font-size-base * 1.15;
 
 .fs-7 {
-  font-size: .85em !important;
+  font-size: .95em !important;
 }
+
+.fs-8 {
+  font-size: .9em !important;
+}
+
 
 
 /* banner background image 

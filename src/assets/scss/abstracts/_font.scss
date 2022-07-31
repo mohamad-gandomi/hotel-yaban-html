@@ -3,6 +3,20 @@
     src: url('~src/assets/fonts/peyda.woff') format('woff');
 }
 
+@font-face {
+	font-family: 'iranyekan';
+	font-style: normal;
+	font-weight: 300;
+	src: url('~src/assets/fonts/iranyekan/eot/iranyekanweblightfanum.eot');
+	src: url('~src/assets/fonts/iranyekan/eot/iranyekanweblightfanum.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('~src/assets/fonts/iranyekan/woff/iranyekanweblightfanum.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('~src/assets/fonts/iranyekan/ttf/iranyekanweblightfanum.ttf') format('truetype');
+}
+
 :root {
-    --bs-body-font-family: 'peyda', sans-serif;
+    --bs-body-font-family: 'iranyekan', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'peyda', sans-serif;
 }
