@@ -2,11 +2,12 @@
 
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/maps";
 @import "~bootstrap/scss/mixins";
 @import "~bootstrap/scss/utilities";
 
 // customization bootstrap sass
-@import "abstracts/customize";
+@import "abstracts/variables";
 
 // Layout & components
 @import "~bootstrap/scss/root";
@@ -43,7 +44,7 @@
 
 // Helpers
 @import "~bootstrap/scss/helpers";
-@import "abstracts/font";
+@import "base/typography";
 
 // Utilities
 @import "~bootstrap/scss/utilities/api";

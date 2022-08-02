@@ -25,6 +25,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-address:before {
+  content: "\e90d";
+}
+.icon-envelope:before {
+  content: "\e90e";
+}
+.icon-phone:before {
+  content: "\e90f";
+}
 .icon-call:before {
   content: "\e900";
 }
@@ -76,6 +85,9 @@
 }
 .icon-sort-amount-desc:before {
   content: "\ea4d";
+}
+.icon-instagram:before {
+  content: "\ea92";
 }
 .icon-whatsapp:before {
   content: "\ea93";
