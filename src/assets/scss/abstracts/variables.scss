@@ -1,12 +1,12 @@
-
 /* Define Custom Colors
 ========================================================================= */
 $light_ultramarine:   #55aad4;
 $dark_ultramarine:    #246382;
 $light_blue:          #5191fa;
+$dark_blue:           #0b0951;
 $light_amber:         #f4a947;
-$violet:              #262335;
 $dark_violet:         #1a172a;
+$violet:              #262335;
 
 
 /* Modify Theme Colors Map
@@ -24,9 +24,9 @@ $theme-colors: map-merge( $custom-colors ,$theme-colors );
 
 /* Modify Navbar Variables
 ========================================================================= */
-$navbar-brand-margin-end:                   0;
-$nav-link-color:                    #0b0951;
-$nav-link-hover-color:           $light_amber;
+$navbar-brand-margin-end:                    0;
+$navbar-light-color:                $dark_blue;
+$navbar-light-hover-color:        $light_amber;
 
 
 /* Modify Font Sizes
