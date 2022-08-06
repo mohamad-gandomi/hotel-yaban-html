@@ -6,6 +6,7 @@
 
 // 2. Include Customized Variables
 @import "abstracts/variables";
+@import "base/typography.scss";
 
 // 3. Include Maps And Mixins And Utilities
 @import "~bootstrap/scss/maps";
@@ -32,7 +33,6 @@
 // 6. Include Components
 
 // 7. Include Additional Custom Styles
-@import "base/typography.scss";
 @import "abstracts/custom.scss";
 
 // 8. Include Utilities API

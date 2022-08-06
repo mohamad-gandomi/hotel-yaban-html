@@ -47,3 +47,26 @@
     padding-right: 0;
     list-style: none;
 }
+
+/* facilities scrollbar
+========================================================================= */
+.facilities-list::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.facilities-list::-webkit-scrollbar-track {
+  background: #e4e4e4; 
+  border-radius: 10px;
+}
+
+/* Handle */
+.facilities-list::-webkit-scrollbar-thumb {
+  background: #5191fa; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.facilities-list::-webkit-scrollbar-thumb:hover {
+  background: #6ba2fb; 
+}
