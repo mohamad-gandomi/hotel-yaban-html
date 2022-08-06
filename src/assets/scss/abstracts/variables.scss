@@ -7,6 +7,7 @@ $dark_blue:           #0b0951;
 $light_amber:         #f4a947;
 $dark_violet:         #1a172a;
 $violet:              #262335;
+$light-gray:          #f2f2f2;
 
 
 /* Modify Theme Colors Map
@@ -16,6 +17,7 @@ $custom-colors: (
   "color-beta"    :   $light_amber,
   "color-gamma"   :   $violet,
   "color-delta"   :   $light_ultramarine,
+  "color-epsilon" :   $light-gray,
   "color-psi"     :   $dark_violet,
   "color-omega"   :   $light_blue,
 );
@@ -29,14 +31,14 @@ $navbar-light-color:                $dark_blue;
 $navbar-light-hover-color:        $light_amber;
 
 
-/* Modify Font Sizes
+/* Modify Border Width
 ========================================================================= */
-
-
-.fs-7 {
-  font-size: .95em !important;
-}
-
-.fs-8 {
-  font-size: .9em !important;
-}
+$border-custom-widths: (
+  6:  6px,
+  7:  7px,
+  8:  8px,
+  9:  9px,
+  10: 10px,
+  20: 20px
+);
+$border-widths: map-merge( $border-custom-widths ,$theme-colors );
