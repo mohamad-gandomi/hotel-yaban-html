@@ -8,6 +8,7 @@ $light_amber:         #f4a947;
 $dark_violet:         #1a172a;
 $violet:              #262335;
 $light-gray:          #f2f2f2;
+$light:               #f9f9f9;
 
 
 /* Modify Theme Colors Map
@@ -18,6 +19,7 @@ $custom-colors: (
   "color-gamma"   :   $violet,
   "color-delta"   :   $light_ultramarine,
   "color-epsilon" :   $light-gray,
+  "color-zeta"    :   $light,
   "color-psi"     :   $dark_violet,
   "color-omega"   :   $light_blue,
 );

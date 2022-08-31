@@ -70,3 +70,61 @@
 .facilities-list::-webkit-scrollbar-thumb:hover {
   background: #6ba2fb; 
 }
+
+/* slick carousel
+========================================================================= */
+.slider-nav {
+  .item {
+    width: 83px;
+    height: 80px;
+    background-position: center center;
+    background-size: cover;
+    cursor: pointer;
+  }
+
+  .slick-slide.slick-current.slick-active .item {
+    border: 2px solid #5191FA;
+  }
+}
+
+.slider-for {
+
+  position: relative;
+
+  img {
+    width: 100%;
+  }
+
+  .slick-next {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 50%;
+    border: none;
+    width: 40px;
+    height: 40px;
+    opacity: 0.5;
+    background-color: #000;
+  }
+
+  .slick-next:hover {
+    opacity: 0.8;
+  }
+
+  .slick-prev {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 50%;
+    border: none;
+    width: 40px;
+    height: 40px;
+    opacity: 0.5;
+    background-color: #000;
+  }
+
+  .slick-prev:hover {
+    opacity: 0.8;
+  }
+
+}

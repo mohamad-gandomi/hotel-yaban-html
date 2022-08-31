@@ -1,0 +1,40 @@
+@import "../../../node_modules/slick-carousel/slick/slick.scss";
+
+// 1. Include Functions And Default Variables
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+
+// 2. Include Customized Variables
+@import "abstracts/variables";
+@import "base/typography.scss";
+
+// 3. Include Maps And Mixins And Utilities
+@import "~bootstrap/scss/maps";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/utilities";
+
+// 4. Include Customized Utilities
+@import "abstracts/utilitties.scss";
+
+// 5. Include Bootstrap Components
+@import "~bootstrap/scss/root";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/type";
+@import "~bootstrap/scss/images";
+@import "~bootstrap/scss/containers";
+@import "~bootstrap/scss/forms";
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/transitions";
+@import "~bootstrap/scss/dropdown";
+@import "~bootstrap/scss/nav";
+@import "~bootstrap/scss/navbar";
+@import "~bootstrap/scss/card";
+
+// 6. Include Components
+
+// 7. Include Additional Custom Styles
+@import "abstracts/custom.scss";
+
+// 8. Include Utilities API
+@import "~bootstrap/scss/utilities/api";
