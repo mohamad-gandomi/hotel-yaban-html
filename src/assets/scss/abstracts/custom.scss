@@ -128,3 +128,12 @@
   }
 
 }
+
+/* slick carousel
+========================================================================= */
+button[aria-expanded=true] .icon-arrow-down2 {
+  display: none;
+}
+button[aria-expanded=false] .icon-arrow-up2 {
+  display: none;
+}

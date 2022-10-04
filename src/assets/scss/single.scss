@@ -1,4 +1,5 @@
 @import "../../../node_modules/slick-carousel/slick/slick.scss";
+@import "../../../node_modules/@fancyapps/ui/dist/fancybox.css";
 
 // 1. Include Functions And Default Variables
 @import "~bootstrap/scss/functions";
@@ -30,6 +31,8 @@
 @import "~bootstrap/scss/nav";
 @import "~bootstrap/scss/navbar";
 @import "~bootstrap/scss/card";
+@import "~bootstrap/scss/tooltip";
+@import "~bootstrap/scss/popover";
 
 // 6. Include Components
 

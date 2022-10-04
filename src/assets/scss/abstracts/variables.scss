@@ -1,15 +1,16 @@
 /* Define Custom Colors
 ========================================================================= */
 $light_ultramarine:   #55aad4;
+$ultramarine:         #dbeafd;
 $dark_ultramarine:    #246382;
 $light_blue:          #5191fa;
+$icon_blue:           #6abaff;
 $dark_blue:           #0b0951;
 $light_amber:         #f4a947;
 $dark_violet:         #1a172a;
 $violet:              #262335;
 $light-gray:          #f2f2f2;
 $light:               #f9f9f9;
-
 
 /* Modify Theme Colors Map
 ========================================================================= */
@@ -20,6 +21,8 @@ $custom-colors: (
   "color-delta"   :   $light_ultramarine,
   "color-epsilon" :   $light-gray,
   "color-zeta"    :   $light,
+  "color-eta"     :   $ultramarine,
+  "color-theta"   :   $icon_blue,
   "color-psi"     :   $dark_violet,
   "color-omega"   :   $light_blue,
 );
@@ -41,6 +44,6 @@ $border-custom-widths: (
   8:  8px,
   9:  9px,
   10: 10px,
-  20: 20px
+  20: 20px,
 );
-$border-widths: map-merge( $border-custom-widths ,$theme-colors );
+$border-widths: map-merge( $border-custom-widths ,$border-widths );

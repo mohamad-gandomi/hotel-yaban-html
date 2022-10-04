@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?ndtujq');
-  src:  url('../fonts/icomoon.eot?ndtujq#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?ndtujq') format('truetype'),
-    url('../fonts/icomoon.woff?ndtujq') format('woff'),
-    url('../fonts/icomoon.svg?ndtujq#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?b21l51');
+  src:  url('../fonts/icomoon.eot?b21l51#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?b21l51') format('truetype'),
+    url('../fonts/icomoon.woff?b21l51') format('woff'),
+    url('../fonts/icomoon.svg?b21l51#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,73 +25,261 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-address:before {
-  content: "\e90d";
+.icon-filter1:before {
+  content: "\e954";
 }
-.icon-envelope:before {
-  content: "\e90e";
+.icon-filter-filled-tool-symbol:before {
+  content: "\e955";
+}
+.icon-location1:before {
+  content: "\e956";
+}
+.icon-location-1:before {
+  content: "\e957";
+}
+.icon-car:before {
+  content: "\e958";
+}
+.icon-walk:before {
+  content: "\e959";
+}
+.icon-send:before {
+  content: "\e95a";
+}
+.icon-wifi-router:before {
+  content: "\e916";
+}
+.icon-wifi-1:before {
+  content: "\e917";
+}
+.icon-wc:before {
+  content: "\e918";
+}
+.icon-watch-movie:before {
+  content: "\e919";
+}
+.icon-washing-machine:before {
+  content: "\e91a";
+}
+.icon-warm-water:before {
+  content: "\e91b";
+}
+.icon-tray:before {
+  content: "\e91c";
+}
+.icon-toilet-paper:before {
+  content: "\e91d";
+}
+.icon-toilet:before {
+  content: "\e91e";
+}
+.icon-television:before {
+  content: "\e91f";
+}
+.icon-telephone:before {
+  content: "\e920";
+}
+.icon-taxi:before {
+  content: "\e921";
+}
+.icon-table-games:before {
+  content: "\e922";
+}
+.icon-table:before {
+  content: "\e923";
+}
+.icon-switch:before {
+  content: "\e924";
+}
+.icon-sprinkler:before {
+  content: "\e925";
+}
+.icon-sofa:before {
+  content: "\e926";
+}
+.icon-smart-shoe-1:before {
+  content: "\e927";
+}
+.icon-shrine:before {
+  content: "\e928";
+}
+.icon-safe-deposit:before {
+  content: "\e929";
+}
+.icon-safe:before {
+  content: "\e92a";
+}
+.icon-room-service:before {
+  content: "\e92b";
+}
+.icon-roof:before {
+  content: "\e92c";
+}
+.icon-refrigerator:before {
+  content: "\e92d";
+}
+.icon-reception:before {
+  content: "\e92e";
+}
+.icon-pool-table:before {
+  content: "\e92f";
+}
+.icon-pool:before {
+  content: "\e930";
+}
+.icon-plastic-bottle:before {
+  content: "\e931";
 }
 .icon-phone:before {
-  content: "\e90f";
+  content: "\e932";
 }
-.icon-call:before {
-  content: "\e900";
+.icon-parking:before {
+  content: "\e933";
 }
-.icon-location_on:before {
-  content: "\e901";
+.icon-opening-ceremony:before {
+  content: "\e934";
 }
-.icon-add:before {
-  content: "\e90b";
+.icon-online-test:before {
+  content: "\e935";
 }
-.icon-remove:before {
-  content: "\e90c";
+.icon-mosque:before {
+  content: "\e936";
 }
-.icon-keyboard_arrow_down:before {
-  content: "\e905";
+.icon-minibar:before {
+  content: "\e937";
 }
-.icon-keyboard_arrow_left:before {
-  content: "\e904";
+.icon-mall:before {
+  content: "\e938";
 }
-.icon-keyboard_arrow_right:before {
+.icon-luggage-cart:before {
+  content: "\e939";
+}
+.icon-kettle:before {
+  content: "\e93a";
+}
+.icon-jacuzzi:before {
+  content: "\e93b";
+}
+.icon-jacuzzi-1:before {
+  content: "\e93c";
+}
+.icon-house-cleaning:before {
+  content: "\e93d";
+}
+.icon-hot-tub:before {
+  content: "\e93e";
+}
+.icon-hotel-service:before {
+  content: "\e93f";
+}
+.icon-hanger:before {
+  content: "\e940";
+}
+.icon-hairdryer:before {
+  content: "\e941";
+}
+.icon-gym:before {
+  content: "\e942";
+}
+.icon-going-up:before {
+  content: "\e943";
+}
+.icon-fire-extinguisher:before {
+  content: "\e944";
+}
+.icon-fan:before {
+  content: "\e945";
+}
+.icon-exchange-rate:before {
+  content: "\e946";
+}
+.icon-elevator:before {
+  content: "\e947";
+}
+.icon-dresser:before {
+  content: "\e948";
+}
+.icon-disability:before {
+  content: "\e949";
+}
+.icon-coffee-preparation:before {
+  content: "\e94a";
+}
+.icon-coffee-machine:before {
+  content: "\e94b";
+}
+.icon-closet:before {
+  content: "\e94c";
+}
+.icon-camera:before {
+  content: "\e94d";
+}
+.icon-bell:before {
+  content: "\e94e";
+}
+.icon-bathtub:before {
+  content: "\e94f";
+}
+.icon-bath-towel:before {
+  content: "\e950";
+}
+.icon-atm-machine:before {
+  content: "\e951";
+}
+.icon-airport:before {
+  content: "\e952";
+}
+.icon-air-conditioning:before {
+  content: "\e953";
+}
+.icon-Breakfast-allow:before {
   content: "\e907";
 }
-.icon-keyboard_arrow_up:before {
+.icon-Breakfast-not-allow:before {
   content: "\e908";
 }
-.icon-arrow_back_ios:before {
-  content: "\e90a";
-  display: block;
-  margin: 3px 0 5px;
-}
-.icon-arrow_forward_ios:before {
+.icon-eight_person_capacity:before {
   content: "\e909";
-  display: block;
-  margin: 3px 0 5px;
+}
+.icon-five_person_capacity:before {
+  content: "\e90a";
+}
+.icon-four_person_capacity:before {
+  content: "\e90d";
+}
+.icon-Lunch-Available:before {
+  content: "\e90e";
+}
+.icon-Lunch-Not-available:before {
+  content: "\e90f";
+}
+.icon-nine_person_capacity:before {
+  content: "\e910";
+}
+.icon-One_person_capacity:before {
+  content: "\e911";
+}
+.icon-seven_person_capacity:before {
+  content: "\e912";
+}
+.icon-six_person_capacity:before {
+  content: "\e913";
+}
+.icon-three_person_capacity:before {
+  content: "\e914";
+}
+.icon-two_person_capacity:before {
+  content: "\e915";
 }
 .icon-star:before {
-  content: "\e902";
+  content: "\e904";
 }
-.icon-bolt:before {
-  content: "\e903";
+.icon-directions_car:before {
+  content: "\e90c";
 }
-.icon-filter_alt:before {
+.icon-lightning1:before {
   content: "\e906";
 }
-.icon-search:before {
-  content: "\e986";
-}
-.icon-equalizer:before {
-  content: "\e992";
-}
-.icon-sort-amount-desc:before {
-  content: "\ea4d";
-}
-.icon-instagram:before {
-  content: "\ea92";
-}
-.icon-whatsapp:before {
-  content: "\ea93";
-}
-.icon-telegram:before {
-  content: "\ea95";
+.icon-lightning:before {
+  content: "\e905";
 }
