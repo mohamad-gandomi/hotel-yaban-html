@@ -75,8 +75,8 @@
 ========================================================================= */
 .slider-nav {
   .item {
-    width: 83px;
-    height: 80px;
+    width: clamp(4.21875rem, 4.323vw, 5.1875rem);
+    height: clamp(4.063rem, 4.167vw, 5rem);
     background-position: center center;
     background-size: cover;
     cursor: pointer;
@@ -131,9 +131,9 @@
 
 /* slick carousel
 ========================================================================= */
-button[aria-expanded=true] .icon-arrow-down2 {
+button[aria-expanded=true] .icon-arrow-down {
   display: none;
 }
-button[aria-expanded=false] .icon-arrow-up2 {
+button[aria-expanded=false] .icon-arrow-up {
   display: none;
 }

@@ -30,7 +30,7 @@ $(function() {
 
   });
 
-  $(".filter").on('keyup', function(){ 
+  $(".filter").on('keyup', function() {
  
     // Retrieve the input field text and reset the count to zero
     var filter = $(this).val()
